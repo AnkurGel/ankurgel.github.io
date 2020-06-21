@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+
+:root {
+  --red: #C60002;
+  --black-3: #313131;
+  --white: #fff;
+}
+
+::selection {
+  background-color: var(--red);
+  color: var(--white);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #fefefe;
+  font-family: Quicksand;
+  font-size: 16px;
+  color: var(--black-3);
+}
+
+hr {
+  border: 0;
+  text-align: center;
+  display: block;
+  margin: 80px 0;
+}
+
+hr:after {
+  content: '•••';
+  letter-spacing: 5px;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.clear:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.page {
+  max-width: 900px;
+  padding: 20px;
+  margin: auto;
+  width: 100%;
+  font-weight: 500;
+  line-height: 27px;
+  height: 100%;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header ul {
+  float: right;
+}
+
+header li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+header a {
+  transition: color 250ms ease;
+  color: var(--red);
+}
+
+header a:hover,
+.active-nav a {
+  color: var(--black-3);
+}
+
+.logo {
+  font-family: Minim Joe;
+  letter-spacing: -12px;
+  font-size: 40px;
+  border: 1px solid var(--black-3);
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  text-align: center;
+  text-indent: -10px;
+  margin-bottom: 20px;
+}
+
+.logo span {
+  color: var(--red);
+}
+
+.intro {
+  margin-top: 200px;
+}
+
+.intro p {
+  margin-top: 20px;
+}
+
+.intro ul {
+  margin-top: 20px;
+}
+
+.intro li {
+  display: inline-block;
+  padding: 10px 15px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.intro li:first-of-type {
+  padding-left: 0;
+}
+
+.intro a {
+  color: var(--red);
+  position: relative;
+  transition: color 250ms ease;
+}
+
+.intro li:after {
+  content: '/';
+  position: absolute;
+  right: -10px;
+}
+
+.intro li:last-of-type:after {
+  content: '';
+}
+
+.intro li a:hover {
+  color: var(--black-3);
+}
+
+.code {
+  font-size: 35vh;
+  transform: rotate(-90deg);
+  position: absolute;
+  left: 20px;
+  font-weight: 600;
+  transform-origin: 420px 450px;
+  z-index: -1;
+  color: #eee;
+}
+
+.project-grid {
+  max-width: 840px;
+  display: grid;
+  width: 100%;
+  margin: auto;
+  grid-template-columns: 50% 50%;
+  column-gap: 0;
+  row-gap: 0;
+  margin-top: 40px;
+}
+
+.project-grid video,
+.project-grid img {
+  display: block;
+  width: 100%;
+}
