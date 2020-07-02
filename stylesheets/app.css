@@ -238,6 +238,26 @@ header a:hover,
   color: var(--white);
 }
 
+[data-project=uber] .project-panel {
+  background: #121212;
+  color: var(--white);
+}
+
+[data-project=duss] .project-panel {
+  background: #004fac;
+  color: var(--white);
+}
+
+[data-project=statsampleglm] .project-panel {
+  background-color: #2196F3;
+  color: var(--white);
+}
+
+[data-project=brainstorm] .project-panel {
+  background-color: #F6BB92;
+  color: var(--white);
+}
+
 a.view-project-cta {
   border: 1px solid var(--red);
   margin: auto;
@@ -262,5 +282,9 @@ a.view-project-cta:hover {
     margin-right: 0;
     padding: 10px;
     padding-right: 0;
+  }
+
+  .project-box ul {
+    column-count: unset;
   }
 }
