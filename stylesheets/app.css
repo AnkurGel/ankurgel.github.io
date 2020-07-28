@@ -124,7 +124,7 @@ header a:hover,
 }
 
 .intro {
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .intro p {
@@ -276,7 +276,7 @@ a.view-project-cta:hover {
 
 @media all and (max-width: 512px) {
   .intro {
-    margin-top: 80px;
+    margin-top: 30px;
   }
 
   .intro li {
